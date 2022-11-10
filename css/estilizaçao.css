@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+
+/*pra dar reset no csss*/
+* {
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* o meu body, botei overflow hidden pra não ter barra de rolagem*/
+body {
+    background-color: #3492eb;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+/* o cabeçalho com o titulo no centro*/
+.cabeçalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    height: 45px;
+    max-width: 400px;
+    width: 100%;
+    padding: 0px;
+    margin: 25px auto;
+    border-radius: 80px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+/* container do corpo inteiro*/
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    background-color: #96cefc;
+    height: 800px;
+    width: 1000px;
+    margin: 40px 450px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+/*o titulo em cima da chave numerica*/
+h3 {
+    margin: 10px 0px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 25px;
+}
+textarea {
+    text-decoration: none;
+}
+/* os radios buttons*/
+input[type=radio], input[type=submit], input[type=reset] {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    height: 35px;
+    width: 150px;
+    border-radius: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Baloo Thambi 2', cursive;
+  }
+  /* o rodape */
+  footer {
+    font-size: 15px;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    margin: -18px 0px;
+  }
+  /* uma div para a imagem de trás*/
+  .parent {
+    position: relative;
+  }
+/* a imagem com opacidade e no fundo dos elementos das primeiras divs*/
+  img.fade {
+
+    position: absolute;
+    height: 700px;
+    width: 600px;
+    top: 270px;
+    left: 1400px;
+    opacity: 80%;
+    z-index: -1000;
+
+  }
+  /* a caixa de texto*/
+  .textarea {
+    background-color: #ddd;
+    color: black;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid transparent black;
+    outline: none;
+    line-height: 1.4;
+    transition: all 0.2s;
+    font-size: 16px;
+
+  }
+  /* quando você passar o mouse na caixa, ela vai mudar a cor*/
+  .textarea:hover {
+    cursor: pointer;
+    background-color: white;
+  }
+  /* quando ela for clicada, ela vai mudar a cor também*/
+  .textarea:focus {
+    cursor: text;
+    color: black;
+    background-color: white;
+    border: black;
+
+  }
+.radio {
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+/*titulo também*/
+.titulo {
+  margin: 50px 25px
+}
+/* a chave numerica da cifra de cesar */
+.chaveNumber {
+  margin: 50px 25px;
+  font-family: 'Baloo Thambi 2', cursive;
+}
+/* a selação de linguagem */
+.select {
+  height: 30px;
+  width: 180px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Baloo Thambi 2', cursive;
+  border-radius: 8px;
+}
+/* os botões radios */
+.radiobtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Baloo Thambi 2', cursive;
+  height: 50px;
+  width: 25px;
+  margin: 10px 250px;
+}
+/* pra chave numerica ficar escondida e só aparecer quando selecionada */
+.chaveNumber {
+  display: none;
+}
+/* o botão de resultado e a animação de hover */
+.resultadobtn {
+  background-color: rgb(226, 226, 226);
+  height: 30px;
+  width: 180px;
+  border: 2px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Baloo Thambi 2', cursive;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.resultadobtn:hover {
+      background-color: white;
+}
+h4 {
+  margin: 10px 0px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 25px;
+}

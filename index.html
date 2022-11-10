@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilizaçao.css">
+    <link rel="stylesheet"  href="./css/mediaquery.css">
+    <title>Codificador/Decodificador</title>
+</head>
+<body>
+    <header class="cabeçalho">Codificador/Decodificador</header>
+    <main>
+        <div class="principal">
+        <!--div principal da pagina-->
+        <div class="container1">
+            <form action="" class="formulario1">
+                <div class="titulo">
+                <label for="chaveNumber"><h3>Into the Vrains</h3></label>
+                <!--caixa para selecionar a linguagem-->
+                <select name="select" id="select" class="select" onclick="selecao()">
+                    <option id="option" value="selecione">Selecione uma opção</option>
+                    <option id="base64" value="base64">Base64</option>
+                    <option id="cifra" value="cifra">Cifra de César</option>
+                </select>
+                    </div>
+                   
+                <div class="chaveNumber" id="chaveCont">
+                    <!--Chave numerica da cifra de cesar-->
+
+                    <label class="chave" for="range">Escolha uma chave:</label>
+
+                    <div class="deslize">
+                        <input type="range" value="1" min="1" max="26" class="range" id="range"
+                            oninput="rangenumber.value=value" />
+                        <input type="number" value="1" id="rangenumber" min="1" max="26" oninput="range.value=value" />
+                    </div>
+
+                </div>   
+                <!--area de texto-->
+                <textarea id="textocode" name="code" rows="5" cols="50" class="textarea" placeholder="Digite sua mensagem..."></textarea>
+                <div class="radiobtn">
+                    <!--botões para codificar e decodificar-->
+
+                    <div>
+                        <input type="radio" id="codificar" name="selecione" value="codificar" checked/>
+                        <label for="codificar" class="titulocode">Codificar</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="decodificar" name="selecione" value="decodificar" />
+                        <label for="decodificar" class="titulodecode">Decodificar</label>
+                    </div>
+                </div>
+                <label for="output"><h4>Sua mensagem aparecerá aqui!</h4></label></p></p>
+                <textarea id="output" name="output" rows="5" cols="50" class="textarea" placeholder="Esperando resultado..."></textarea>
+                <div class="btn">
+                    <!--botão para obter o resultado desejado-->
+                    <button id="resultbtn" class="resultadobtn">Codificar Mensagem!</button>
+                </div>
+    
+            
+            </form>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="rodape">© Todos os direitos reservados. © Gabriel da Silva</div>
+    </footer>
+    <div class="parente">
+        <div id="opacity_div"><img class="fade" src="../css/accesscode.png"></div>
+        
+    </div>
+    <script src="../js/accesscode.js"></script>
+</body>
+</html>
