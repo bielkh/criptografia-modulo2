@@ -54,8 +54,11 @@ h3 {
     font-family: 'Baloo Thambi 2', cursive;
     font-size: 25px;
 }
-textarea {
+textarea1 {
     text-decoration: none;
+}
+textarea2 {
+  text-decoration: none;
 }
 /* os radios buttons*/
 input[type=radio], input[type=submit], input[type=reset] {
@@ -96,7 +99,19 @@ input[type=radio], input[type=submit], input[type=reset] {
 
   }
   /* a caixa de texto*/
-  .textarea {
+  .textarea1 {
+    background-color: #ddd;
+    color: black;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid transparent black;
+    outline: none;
+    line-height: 1.4;
+    transition: all 0.2s;
+    font-size: 16px;
+
+  }
+  .textarea2 {
     background-color: #ddd;
     color: black;
     padding: 1em;
@@ -109,12 +124,24 @@ input[type=radio], input[type=submit], input[type=reset] {
 
   }
   /* quando você passar o mouse na caixa, ela vai mudar a cor*/
-  .textarea:hover {
+  .textarea1:hover {
     cursor: pointer;
     background-color: white;
   }
   /* quando ela for clicada, ela vai mudar a cor também*/
-  .textarea:focus {
+  .textarea1:focus {
+    cursor: text;
+    color: black;
+    background-color: white;
+    border: black;
+
+  }  /* quando você passar o mouse na caixa, ela vai mudar a cor*/
+  .textarea2:hover {
+    cursor: pointer;
+    background-color: white;
+  }
+  /* quando ela for clicada, ela vai mudar a cor também*/
+  .textarea2:focus {
     cursor: text;
     color: black;
     background-color: white;
@@ -186,28 +213,57 @@ h4 {
   font-family: 'Baloo Thambi 2', cursive;
   font-size: 25px;
 }
+/* aqui e a parte responsiva*/
+@media (max-width: 1440px) {
+  .cabeçalho {
+    transform: translateX(0%);
+  }
+  .container1 {
+      margin: 0px 0px;
+      transform: translateX(22%);
+      height: 700px;
+  }
+  .conteudo {
+    transform: translateY(-10%);
+  }
+  .rodape {
+      margin: 50px 25px;
+      transform: translateX(0%);
+  }
+  img {
+      transform: translateX(-65%);
+  }
+}
+@media (max-width: 1280px) {
+  .principal {
+      margin:  0px 0px;
+      transform: translateX(-6%);
+  }
+  .container1 {
+    height: 640px;
+  }
+  .conteudo {
+    transform: translateY(-5%);
+  }
+  .rodape {
+      transform: translateY(-50%);
+      transform: translateX(2%);
+  }
+  img {
+      transform: translateX(-90%);
+  }
+}
 @media (max-width: 850px) {
   .container1{
       
       flex-direction: column;
   }
 }
-@media (max-width: 1280px) {
-  .principal {
-      margin: 0px 0px;
-      transform: translateX(-25%);
-  }
-  .rodape {
-      transform: translateY(-25%);
-  }
-  img {
-      transform: translateX(-90%);
-  }
-}
+
 @media (max-width: 768px) {
   .principal {
       
-      transform: translateX(-54%)
+      transform: translateX(-15%)
   }
   .container1 {
       height: 700px;
@@ -219,17 +275,43 @@ h4 {
   }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 700px) {
   .principal {
-     transform: translateX(-113%);
+    width: 70%;
+    transform: translateX(0%)
+  }
+}
+
+@media (max-width: 375px) {
+
+  .principal {
+     transform: translateX(-20%);
+     width: 50%;
+  }
+  .titulo {
+    transform: translateY(-100%);  
+  }
+  .conteudo {
+    transform: translateY(-25%);
   }
   .container1 {
       height: 650px;
       width: 320px;
+      font-size: 2px;
   }
-  .textarea {
+  h4 {
+    font-size: 20px;
+  }
+  .textarea1, .textarea2 {
       transform: translateY(-25%);
       width: 190px;
+      height: 100px;
+  }
+  .textarea2 {
+    transform: translateY(20%);
+  }
+  .resultadobtn {
+    transform: translateY(100%);
   }
   img {
       margin-top: 50px;
